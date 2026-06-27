@@ -16,16 +16,10 @@ It is based on the Wikipedia field guide [Signs of AI writing](https://en.wikipe
 
 ## Installation
 
-Clone the repository wherever you keep local skills:
+Clone the repository directly into your Codex skills directory:
 
 ```bash
-git clone https://github.com/chemark/audit-ai-writing.git ~/skill/audit-ai-writing
-```
-
-Then expose it to Codex with a symlink:
-
-```bash
-ln -s ~/skill/audit-ai-writing ~/.codex/skills/audit-ai-writing
+git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
 ```
 
 Restart Codex or open a new session if the skill list does not refresh immediately.
@@ -61,6 +55,13 @@ AGENTS.md
 
 `AGENTS.md` is for coding agents that maintain this repository. End users can start with this README and `SKILL.md`.
 
+If you prefer to keep editable skill sources elsewhere, use a symlink-based development install:
+
+```bash
+git clone https://github.com/chemark/audit-ai-writing.git ~/skill/audit-ai-writing
+ln -s ~/skill/audit-ai-writing ~/.codex/skills/audit-ai-writing
+```
+
 ## 中文
 
 这是一个 Codex skill，用来在文章发布前审查常见 AI 写作痕迹和发布语境污染。
@@ -77,16 +78,10 @@ AGENTS.md
 
 ### 安装
 
-把仓库 clone 到你存放本地 skill 的目录：
+把仓库直接 clone 到 Codex 的 skills 目录：
 
 ```bash
-git clone https://github.com/chemark/audit-ai-writing.git ~/skill/audit-ai-writing
-```
-
-再用 symlink 暴露给 Codex：
-
-```bash
-ln -s ~/skill/audit-ai-writing ~/.codex/skills/audit-ai-writing
+git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
 ```
 
 如果 skill 列表没有立刻刷新，重启 Codex 或开启一个新会话。
@@ -119,16 +114,10 @@ Wikipedia の [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Sign
 
 ### インストール
 
-ローカル skill 用のディレクトリに clone します:
+Codex の skills ディレクトリに直接 clone します:
 
 ```bash
-git clone https://github.com/chemark/audit-ai-writing.git ~/skill/audit-ai-writing
-```
-
-Codex から見えるように symlink を作成します:
-
-```bash
-ln -s ~/skill/audit-ai-writing ~/.codex/skills/audit-ai-writing
+git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
 ```
 
 skill 一覧にすぐ表示されない場合は、Codex を再起動するか新しいセッションを開いてください。
@@ -161,16 +150,10 @@ Wikipedia의 [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs
 
 ### 설치
 
-로컬 skill을 보관하는 디렉터리에 저장소를 clone합니다:
+Codex skills 디렉터리에 바로 저장소를 clone합니다:
 
 ```bash
-git clone https://github.com/chemark/audit-ai-writing.git ~/skill/audit-ai-writing
-```
-
-Codex가 찾을 수 있도록 symlink를 만듭니다:
-
-```bash
-ln -s ~/skill/audit-ai-writing ~/.codex/skills/audit-ai-writing
+git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
 ```
 
 skill 목록이 바로 갱신되지 않으면 Codex를 재시작하거나 새 세션을 여세요.
