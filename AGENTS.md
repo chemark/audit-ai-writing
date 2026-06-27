@@ -32,8 +32,4 @@ Use a Python environment with `PyYAML` available.
 
 Use short conventional commits such as `docs: add repository guidelines` or `docs: refine audience boundary checks`.
 
-Before pushing to GitHub or changing public repository settings, confirm with the user. This skill may be symlinked into Codex at:
-
-```text
-~/.codex/skills/audit-ai-writing -> <repo-root>
-```
+Before pushing to GitHub or changing public repository settings, confirm with the user. Keep local installation preferences out of public repository docs unless they are generally useful to external users.

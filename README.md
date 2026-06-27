@@ -55,13 +55,6 @@ AGENTS.md
 
 `AGENTS.md` is for coding agents that maintain this repository. End users can start with this README and `SKILL.md`.
 
-If you prefer to keep editable skill sources elsewhere, use a symlink-based development install:
-
-```bash
-git clone https://github.com/chemark/audit-ai-writing.git ~/skill/audit-ai-writing
-ln -s ~/skill/audit-ai-writing ~/.codex/skills/audit-ai-writing
-```
-
 ## 中文
 
 这是一个 Codex skill，用来在文章发布前审查常见 AI 写作痕迹和发布语境污染。
