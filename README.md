@@ -41,7 +41,7 @@ For rewrite requests, the skill should preserve the author's intent and voice. F
 Validate after edits:
 
 ```bash
-/usr/bin/python3 /Users/xingshuhao/.codex/skills/.system/skill-creator/scripts/quick_validate.py /Users/xingshuhao/skill/audit-ai-writing
+python3 /path/to/skill-creator/scripts/quick_validate.py .
 ```
 
 The repository includes:

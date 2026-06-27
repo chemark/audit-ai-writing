@@ -23,10 +23,10 @@ For public article drafts, preserve the publication boundary: published text sho
 Run the skill validator after edits:
 
 ```bash
-/usr/bin/python3 /Users/xingshuhao/.codex/skills/.system/skill-creator/scripts/quick_validate.py /Users/xingshuhao/skill/audit-ai-writing
+python3 /path/to/skill-creator/scripts/quick_validate.py .
 ```
 
-The default Homebrew Python on this machine may not have `yaml`; `/usr/bin/python3` currently can load the existing PyYAML install.
+Use a Python environment with `PyYAML` available.
 
 ## Git And Release Notes
 
@@ -35,5 +35,5 @@ Use short conventional commits such as `docs: add repository guidelines` or `doc
 Before pushing to GitHub or changing public repository settings, confirm with the user. This skill may be symlinked into Codex at:
 
 ```text
-/Users/xingshuhao/.codex/skills/audit-ai-writing -> /Users/xingshuhao/skill/audit-ai-writing
+~/.codex/skills/audit-ai-writing -> <repo-root>
 ```
