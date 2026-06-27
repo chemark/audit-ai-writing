@@ -2,13 +2,13 @@
 
 ## Project Scope
 
-This repository packages the `audit-ai-writing` Codex skill. Keep it focused on auditing and revising drafts for AI-writing tells, especially reader-facing article drafts.
+This repository packages the `audit-ai-writing` agent skill. Keep it focused on auditing and revising drafts for AI-writing tells, especially reader-facing article drafts.
 
 ## Project Structure
 
 - `SKILL.md`: skill manifest and operating guide. Update this when trigger behavior, workflow, output style, or guardrails change.
 - `references/signs-of-ai-writing.md`: detailed review checklist. Put concrete patterns, examples, and fix rules here instead of bloating `SKILL.md`.
-- `agents/openai.yaml`: UI metadata for Codex. Update only when the display name, short description, default prompt, or invocation policy changes.
+- `agents/openai.yaml`: optional Codex/OpenAI UI metadata. Update only when the display name, short description, default prompt, or invocation policy changes.
 
 Do not add broad documentation files such as `README.md`, `TODO.md`, or `CHANGELOG.md` unless the user explicitly asks for them.
 
@@ -32,4 +32,4 @@ Use a Python environment with `PyYAML` available.
 
 Use short conventional commits such as `docs: add repository guidelines` or `docs: refine audience boundary checks`.
 
-Before pushing to GitHub or changing public repository settings, confirm with the user. Keep local installation preferences out of public repository docs unless they are generally useful to external users.
+Before pushing to GitHub or changing public repository settings, confirm with the user. Keep local installation preferences out of public repository docs unless they are generally useful to external users. Public docs should describe the skill as usable by any agent that can read `SKILL.md`, while noting Codex-specific metadata or install paths only where relevant.

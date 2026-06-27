@@ -2,9 +2,11 @@
 
 English | [中文](#中文) | [日本語](#日本語) | [한국어](#한국어)
 
-A Codex skill for reviewing drafts for common AI-writing tells and publication-boundary leaks.
+A portable agent skill for reviewing drafts for common AI-writing tells and publication-boundary leaks.
 
 It is based on the Wikipedia field guide [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), but it is not an AI detector. The skill treats those signs as editing heuristics: it helps improve drafts, tighten claims, remove generic AI phrasing, and catch assistant/editor notes that accidentally leak into reader-facing prose.
+
+The core instructions live in `SKILL.md`, so any agent that can read local instruction files can use it, including Codex, Claude Code, OpenCode, Kimi, Gemini, and other coding or writing agents.
 
 ## What It Checks
 
@@ -14,9 +16,9 @@ It is based on the Wikipedia field guide [Signs of AI writing](https://en.wikipe
 - Markdown, citation, or tool artifacts left in prose
 - Publication-boundary leaks, such as instructions to the author, editor comments, or model self-talk inside the article
 
-## Installation
+## Installation And Usage
 
-Clone the repository directly into your Codex skills directory:
+For Codex, clone the repository directly into your Codex skills directory:
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
@@ -24,12 +26,16 @@ git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-
 
 Restart Codex or open a new session if the skill list does not refresh immediately.
 
-## Usage
+For other agents, clone the repository anywhere and point the agent at `SKILL.md` or the repository folder:
 
-Ask Codex to use the skill explicitly:
+```bash
+git clone https://github.com/chemark/audit-ai-writing.git
+```
+
+Then ask your agent to use the skill. Codex users can also say `Use $audit-ai-writing`.
 
 ```text
-Use $audit-ai-writing to review this draft for signs of AI writing and suggest concrete edits:
+Use the audit-ai-writing skill in SKILL.md to review this draft for signs of AI writing and suggest concrete edits:
 
 ...
 ```
@@ -57,9 +63,11 @@ AGENTS.md
 
 ## 中文
 
-这是一个 Codex skill，用来在文章发布前审查常见 AI 写作痕迹和发布语境污染。
+这是一个通用 agent skill，用来在文章发布前审查常见 AI 写作痕迹和发布语境污染。
 
 它参考 Wikipedia 的 [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)，但它不是 AI 检测器。它不会判断一篇文章是不是 AI 写的，而是把这些迹象当作编辑启发式：帮你删掉空泛表达、收紧事实主张、减少模板化 AI 腔，并检查“本来是助手或编辑对作者说的话”有没有误写进正文。
+
+核心说明在 `SKILL.md`，所以任何能读取本地指令文件的 agent 都可以用，包括 Codex、Claude Code、OpenCode、Kimi、Gemini 和其他主流写作或编码 agent。
 
 ### 检查内容
 
@@ -69,9 +77,9 @@ AGENTS.md
 - Markdown、引用、工具输出痕迹残留
 - 发布语境污染，例如对作者的指令、编辑备注、模型自述混进文章
 
-### 安装
+### 安装和用法
 
-把仓库直接 clone 到 Codex 的 skills 目录：
+Codex 用户可以把仓库直接 clone 到 Codex 的 skills 目录：
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
@@ -79,12 +87,16 @@ git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-
 
 如果 skill 列表没有立刻刷新，重启 Codex 或开启一个新会话。
 
-### 用法
+其他 agent 可以把仓库 clone 到任意位置，然后让 agent 读取 `SKILL.md` 或这个仓库目录：
 
-显式要求 Codex 使用这个 skill：
+```bash
+git clone https://github.com/chemark/audit-ai-writing.git
+```
+
+然后显式要求 agent 使用这个 skill。Codex 用户也可以说 `Use $audit-ai-writing`。
 
 ```text
-Use $audit-ai-writing to review this draft for signs of AI writing and suggest concrete edits:
+Use the audit-ai-writing skill in SKILL.md to review this draft for signs of AI writing and suggest concrete edits:
 
 ...
 ```
@@ -93,9 +105,11 @@ Use $audit-ai-writing to review this draft for signs of AI writing and suggest c
 
 ## 日本語
 
-これは、公開前の原稿に含まれる典型的な AI 文章らしさや、公開文に混入した編集メモを確認するための Codex skill です。
+これは、公開前の原稿に含まれる典型的な AI 文章らしさや、公開文に混入した編集メモを確認するための汎用 agent skill です。
 
 Wikipedia の [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) を参考にしていますが、AI 検出器ではありません。文章の作者を断定するものではなく、編集上のヒューリスティックとして使います。曖昧な表現、根拠の弱い主張、定型的な AI 風表現、読者向け本文に紛れ込んだアシスタントや編集者向けの発話を見つけやすくします。
+
+中心となる手順は `SKILL.md` にあります。そのため、ローカルの指示ファイルを読める agent であれば利用できます。Codex、Claude Code、OpenCode、Kimi、Gemini などの主要な writing/coding agent で使えます。
 
 ### チェック内容
 
@@ -105,9 +119,9 @@ Wikipedia の [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Sign
 - Markdown、引用、ツール出力の残骸
 - 著者への指示、編集メモ、モデルの自己言及が本文に混入している箇所
 
-### インストール
+### インストールと使い方
 
-Codex の skills ディレクトリに直接 clone します:
+Codex では、Codex の skills ディレクトリに直接 clone します:
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
@@ -115,12 +129,16 @@ git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-
 
 skill 一覧にすぐ表示されない場合は、Codex を再起動するか新しいセッションを開いてください。
 
-### 使い方
+ほかの agent では、任意の場所に clone して、`SKILL.md` またはリポジトリ全体を読み込ませます:
 
-Codex に明示的に skill の使用を依頼します:
+```bash
+git clone https://github.com/chemark/audit-ai-writing.git
+```
+
+そのうえで、agent にこの skill を使うよう依頼します。Codex では `Use $audit-ai-writing` と書くこともできます:
 
 ```text
-Use $audit-ai-writing to review this draft for signs of AI writing and suggest concrete edits:
+Use the audit-ai-writing skill in SKILL.md to review this draft for signs of AI writing and suggest concrete edits:
 
 ...
 ```
@@ -129,9 +147,11 @@ Use $audit-ai-writing to review this draft for signs of AI writing and suggest c
 
 ## 한국어
 
-이 Codex skill은 공개 전 초안에서 흔한 AI 문체의 흔적과, 독자용 본문에 섞여 들어간 편집 메모나 어시스턴트의 말을 점검하기 위한 도구입니다.
+이 범용 agent skill은 공개 전 초안에서 흔한 AI 문체의 흔적과, 독자용 본문에 섞여 들어간 편집 메모나 어시스턴트의 말을 점검하기 위한 도구입니다.
 
 Wikipedia의 [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)을 참고하지만, AI 탐지기는 아닙니다. 글쓴이를 판정하지 않고, 편집을 위한 휴리스틱으로 사용합니다. 모호한 표현, 근거가 약한 주장, 전형적인 AI식 문장, 저자나 편집자를 향한 말이 본문에 남아 있는 문제를 찾는 데 도움을 줍니다.
+
+핵심 지침은 `SKILL.md`에 있습니다. 따라서 로컬 지침 파일을 읽을 수 있는 agent라면 사용할 수 있습니다. Codex, Claude Code, OpenCode, Kimi, Gemini 및 다른 주요 writing/coding agent에서 활용할 수 있습니다.
 
 ### 점검 항목
 
@@ -141,9 +161,9 @@ Wikipedia의 [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs
 - Markdown, 인용, 도구 출력 흔적
 - 저자 지시, 편집자 메모, 모델의 자기 언급이 독자용 본문에 섞인 경우
 
-### 설치
+### 설치와 사용법
 
-Codex skills 디렉터리에 바로 저장소를 clone합니다:
+Codex에서는 Codex skills 디렉터리에 바로 저장소를 clone합니다:
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
@@ -151,12 +171,16 @@ git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-
 
 skill 목록이 바로 갱신되지 않으면 Codex를 재시작하거나 새 세션을 여세요.
 
-### 사용법
+다른 agent에서는 원하는 위치에 저장소를 clone한 뒤 `SKILL.md` 또는 저장소 폴더를 읽게 하면 됩니다:
 
-Codex에 이 skill을 명시적으로 사용하라고 요청합니다:
+```bash
+git clone https://github.com/chemark/audit-ai-writing.git
+```
+
+그다음 agent에 이 skill을 사용하라고 요청합니다. Codex에서는 `Use $audit-ai-writing`라고 써도 됩니다:
 
 ```text
-Use $audit-ai-writing to review this draft for signs of AI writing and suggest concrete edits:
+Use the audit-ai-writing skill in SKILL.md to review this draft for signs of AI writing and suggest concrete edits:
 
 ...
 ```
