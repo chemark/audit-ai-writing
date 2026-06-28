@@ -7,6 +7,10 @@
   <a href="#한국어">한국어</a>
 </p>
 
+<p align="center">
+  Built with Codex.
+</p>
+
 A portable agent skill for reviewing drafts for common AI-writing tells and publication-boundary leaks.
 
 It is based on the Wikipedia field guide [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), but it is not an AI detector. The skill treats those signs as editing heuristics: it helps improve drafts, tighten claims, remove generic AI phrasing, and catch assistant/editor notes that accidentally leak into reader-facing prose.
@@ -108,6 +112,25 @@ Use the audit-ai-writing skill in SKILL.md to review this draft for signs of AI 
 
 如果是改写请求，skill 会尽量保留作者原意和声音。如果是审稿请求，它会列出可执行问题和可直接替换的写法。
 
+### 开发
+
+修改后运行验证：
+
+```bash
+python3 /path/to/skill-creator/scripts/quick_validate.py .
+```
+
+仓库包含：
+
+```text
+SKILL.md
+agents/openai.yaml
+references/signs-of-ai-writing.md
+AGENTS.md
+```
+
+`AGENTS.md` 是给维护这个仓库的 coding agents 使用的。终端用户可以从这个 README 和 `SKILL.md` 开始。
+
 ## 日本語
 
 これは、公開前の原稿に含まれる典型的な AI 文章らしさや、公開文に混入した編集メモを確認するための汎用 agent skill です。
@@ -150,6 +173,25 @@ Use the audit-ai-writing skill in SKILL.md to review this draft for signs of AI 
 
 リライトでは著者の意図と声をできるだけ保ちます。レビューでは、実際に直せる問題点と置き換え案を出します。
 
+### 開発
+
+編集後に検証します:
+
+```bash
+python3 /path/to/skill-creator/scripts/quick_validate.py .
+```
+
+このリポジトリには以下が含まれます:
+
+```text
+SKILL.md
+agents/openai.yaml
+references/signs-of-ai-writing.md
+AGENTS.md
+```
+
+`AGENTS.md` は、このリポジトリを保守する coding agents 向けのガイドです。通常の利用者は、この README と `SKILL.md` から始められます。
+
 ## 한국어
 
 이 범용 agent skill은 공개 전 초안에서 흔한 AI 문체의 흔적과, 독자용 본문에 섞여 들어간 편집 메모나 어시스턴트의 말을 점검하기 위한 도구입니다.
@@ -191,3 +233,22 @@ Use the audit-ai-writing skill in SKILL.md to review this draft for signs of AI 
 ```
 
 다시 쓰기 요청에서는 저자의 의도와 목소리를 최대한 유지합니다. 리뷰 요청에서는 실제로 수정할 수 있는 문제와 대체 문장을 제안합니다.
+
+### 개발
+
+수정 후 검증합니다:
+
+```bash
+python3 /path/to/skill-creator/scripts/quick_validate.py .
+```
+
+저장소에는 다음 파일이 포함됩니다:
+
+```text
+SKILL.md
+agents/openai.yaml
+references/signs-of-ai-writing.md
+AGENTS.md
+```
+
+`AGENTS.md`는 이 저장소를 유지보수하는 coding agents를 위한 안내입니다. 일반 사용자는 이 README와 `SKILL.md`에서 시작하면 됩니다.
