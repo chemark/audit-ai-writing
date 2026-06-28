@@ -8,6 +8,12 @@
 </p>
 
 <p align="center">
+  <a href="https://skills.sh/chemark/audit-ai-writing">
+    <img src="https://skills.sh/b/chemark/audit-ai-writing" alt="skills.sh">
+  </a>
+</p>
+
+<p align="center">
   Built with <a href="https://github.com/codex">Codex</a>.
 </p>
 
@@ -27,7 +33,12 @@ The core instructions live in `SKILL.md`, so any agent that can read local instr
 
 ## Installation And Usage
 
-For Codex, clone the repository directly into your Codex skills directory:
+**skills CLI** (recommended)
+```bash
+npx skills add chemark/audit-ai-writing
+```
+
+**Codex manual install**
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
@@ -35,13 +46,13 @@ git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-
 
 Restart Codex or open a new session if the skill list does not refresh immediately.
 
-For other agents, clone the repository anywhere and point the agent at `SKILL.md` or the repository folder:
+**Other agents**
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git
 ```
 
-Then ask your agent to use the skill. Codex users can also say `Use $audit-ai-writing`.
+Point your agent at `SKILL.md` or the repository folder, then ask it to use the skill. Codex users can also say `Use $audit-ai-writing`.
 
 ```text
 Use the audit-ai-writing skill in SKILL.md to review this draft for signs of AI writing and suggest concrete edits:
@@ -88,7 +99,12 @@ AGENTS.md
 
 ### 安装和用法
 
-Codex 用户可以把仓库直接 clone 到 Codex 的 skills 目录：
+**skills CLI**（推荐）
+```bash
+npx skills add chemark/audit-ai-writing
+```
+
+**Codex 手动安装**
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
@@ -96,13 +112,13 @@ git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-
 
 如果 skill 列表没有立刻刷新，重启 Codex 或开启一个新会话。
 
-其他 agent 可以把仓库 clone 到任意位置，然后让 agent 读取 `SKILL.md` 或这个仓库目录：
+**其他 agent**
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git
 ```
 
-然后显式要求 agent 使用这个 skill。Codex 用户也可以说 `Use $audit-ai-writing`。
+让 agent 读取 `SKILL.md` 或这个仓库目录，然后显式要求它使用这个 skill。Codex 用户也可以说 `Use $audit-ai-writing`。
 
 ```text
 Use the audit-ai-writing skill in SKILL.md to review this draft for signs of AI writing and suggest concrete edits:
@@ -149,7 +165,12 @@ Wikipedia の [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Sign
 
 ### インストールと使い方
 
-Codex では、Codex の skills ディレクトリに直接 clone します:
+**skills CLI**（推奨）
+```bash
+npx skills add chemark/audit-ai-writing
+```
+
+**Codex 手動インストール**
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
@@ -157,13 +178,13 @@ git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-
 
 skill 一覧にすぐ表示されない場合は、Codex を再起動するか新しいセッションを開いてください。
 
-ほかの agent では、任意の場所に clone して、`SKILL.md` またはリポジトリ全体を読み込ませます:
+**ほかの agent**
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git
 ```
 
-そのうえで、agent にこの skill を使うよう依頼します。Codex では `Use $audit-ai-writing` と書くこともできます:
+`SKILL.md` またはリポジトリ全体を agent に読み込ませてから、この skill を使うよう依頼します。Codex では `Use $audit-ai-writing` と書くこともできます:
 
 ```text
 Use the audit-ai-writing skill in SKILL.md to review this draft for signs of AI writing and suggest concrete edits:
@@ -210,7 +231,12 @@ Wikipedia의 [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs
 
 ### 설치와 사용법
 
-Codex에서는 Codex skills 디렉터리에 바로 저장소를 clone합니다:
+**skills CLI**(권장)
+```bash
+npx skills add chemark/audit-ai-writing
+```
+
+**Codex 수동 설치**
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-ai-writing
@@ -218,13 +244,13 @@ git clone https://github.com/chemark/audit-ai-writing.git ~/.codex/skills/audit-
 
 skill 목록이 바로 갱신되지 않으면 Codex를 재시작하거나 새 세션을 여세요.
 
-다른 agent에서는 원하는 위치에 저장소를 clone한 뒤 `SKILL.md` 또는 저장소 폴더를 읽게 하면 됩니다:
+**다른 agent**
 
 ```bash
 git clone https://github.com/chemark/audit-ai-writing.git
 ```
 
-그다음 agent에 이 skill을 사용하라고 요청합니다. Codex에서는 `Use $audit-ai-writing`라고 써도 됩니다:
+`SKILL.md` 또는 저장소 폴더를 agent가 읽게 한 뒤 이 skill을 사용하라고 요청합니다. Codex에서는 `Use $audit-ai-writing`라고 써도 됩니다:
 
 ```text
 Use the audit-ai-writing skill in SKILL.md to review this draft for signs of AI writing and suggest concrete edits:
