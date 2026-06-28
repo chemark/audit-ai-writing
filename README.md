@@ -8,9 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.skills.sh/chemark/audit-ai-writing/audit-ai-writing">
-    <img src="https://skills.sh/b/chemark/audit-ai-writing" alt="skills.sh">
-  </a>
+  <a href="https://www.skills.sh/chemark/audit-ai-writing/audit-ai-writing">View on skills.sh</a>
 </p>
 
 A portable agent skill for reviewing drafts for common AI-writing tells and publication-boundary leaks.
