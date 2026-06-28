@@ -1,15 +1,14 @@
-# Audit AI Writing
+<div align="center">
 
-<p align="center">
-  English |
-  <a href="#中文">中文</a> |
-  <a href="#日本語">日本語</a> |
-  <a href="#한국어">한국어</a>
-</p>
+**[English](#english) · [中文](#中文) · [日本語](#日本語) · [한국어](#한국어)**
 
-<p align="center">
-  <a href="https://www.skills.sh/chemark/audit-ai-writing/audit-ai-writing">View on skills.sh</a>
-</p>
+[![skills.sh](https://skills.sh/b/chemark/audit-ai-writing)](https://skills.sh/chemark/audit-ai-writing)
+
+</div>
+
+---
+
+## English
 
 A portable agent skill for reviewing drafts for common AI-writing tells and publication-boundary leaks.
 
