@@ -1,6 +1,11 @@
 # Audit AI Writing
 
-English | [中文](#中文) | [日本語](#日本語) | [한국어](#한국어)
+<p align="center">
+  English |
+  <a href="#中文">中文</a> |
+  <a href="#日本語">日本語</a> |
+  <a href="#한국어">한국어</a>
+</p>
 
 A portable agent skill for reviewing drafts for common AI-writing tells and publication-boundary leaks.
 
