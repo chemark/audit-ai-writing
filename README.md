@@ -13,10 +13,6 @@
   </a>
 </p>
 
-<p align="center">
-  Built with <a href="https://github.com/codex">Codex</a>.
-</p>
-
 A portable agent skill for reviewing drafts for common AI-writing tells and publication-boundary leaks.
 
 It is based on the Wikipedia field guide [Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), but it is not an AI detector. The skill treats those signs as editing heuristics: it helps improve drafts, tighten claims, remove generic AI phrasing, and catch assistant/editor notes that accidentally leak into reader-facing prose.
