@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://skills.sh/chemark/audit-ai-writing">
-    <img src="https://skills.sh/b/chemark/audit-ai-writing" alt="skills.sh">
+    <img src="https://img.shields.io/badge/Skills-1-0a0a0a" alt="Skills: 1">
   </a>
 </p>
 
