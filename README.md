@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  Built with Codex.
+  Built with <a href="https://github.com/codex">Codex</a>.
 </p>
 
 A portable agent skill for reviewing drafts for common AI-writing tells and publication-boundary leaks.
